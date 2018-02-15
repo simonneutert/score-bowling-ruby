@@ -1,0 +1,2 @@
+class BowlingError < StandardError
+end
