@@ -1,16 +1,16 @@
 class Game
-  attr_accessor :score, :counter, :frames, :throws, :scoring, :frame, :status
+  attr_accessor :status, :score, :scoring, :counter, :throws, :frames, :frame
 
   def initialize
+    @status = :open
     @score = 0
+    @scoring = []
     @counter = 0
     @throws = 0
     @frames = (0..9).to_a.map { |_e| Frame.new }
-    @scoring = []
-    @status = :open
+    @frame = Null
   end
 
-  # logic for counting
   def roll(pins)
     raise BowlingError if (pins < 0) || (pins > 10)
     raise BowlingError if @status == :closed
