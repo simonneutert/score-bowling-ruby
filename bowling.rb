@@ -1,4 +1,3 @@
-require 'pry'
 class Game
   attr_accessor :score, :counter, :frames, :throws, :scoring, :frame, :status
 
