@@ -83,7 +83,6 @@ module BowlingScorer
 
   def score_two_past_frames_are_strikes?
     prev_double_strike = frame_before?(1, :strike) && frame_before?(2, :strike)
-    
     if game_has_previous_frames?(2) && prev_double_strike
       @score += if @frame.type == :strike
                   (10 + 10 + 10)
