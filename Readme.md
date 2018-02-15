@@ -1,3 +1,16 @@
+__IT WAS BRUTAL__
+
+But in the end, I managed to pull off a quite nifty solution, I guess.
+
+__No googling and no solution inspiration for this piece of art :smirk:__
+
+
+__To do__
+
+- some refactoring after initial commit (2018-02-15 11:36)
+
+---
+
 # Bowling
 __Score a bowling game.__
 
